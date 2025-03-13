@@ -1,0 +1,41 @@
+
+body{
+    background: linear-gradient(black,black,purple);
+    background-attachment:fixed;
+    color:white;
+    text-align:center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+.counterTitle{
+    font-size:100px;
+    margin-top:0px;
+}
+
+#number{
+    font-size:150px;
+    margin-top:0px;
+}
+
+.button{
+    font-size:30px;
+    border-radius: 10px;
+    background-color:rgb(63, 1, 63);
+    border: black solid 2px;
+    color:white;
+}
+
+.button:hover{
+    background-color:white;
+    color:purple;
+}
