@@ -6,6 +6,7 @@ body{
     text-align:center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     animation: fadeIn 1s;
+    box-sizing:border-box;
 }
 
 @keyframes fadeIn{
@@ -19,23 +20,39 @@ body{
 
 .counterTitle{
     font-size:100px;
-    margin-top:0px;
+    margin-top:50px;
 }
 
 #bigNumber{
-    font-size:150px;
-    margin-top:0px;
+    font-size:350px;
+    margin:0px;
+    margin-bottom:60px;
 }
 
 .button{
-    font-size:30px;
-    border-radius: 10px;
+    font-size:60px;
+    border-radius: 70px;
     background-color:rgb(63, 1, 63);
     border: black solid 2px;
     color:white;
+    padding:20px;
+    transition:all ease-in-out .2s;
 }
 
 .button:hover{
-    background-color:white;
-    color:purple;
+    background-color:purple;
+    color:white;
+    transform: scale(1.1);
+}
+
+.button:active{
+    color:white;
+    background-color: rgb(194, 0, 194);
+    transition:none 0s;
+}
+
+.buttons{
+    display:flex;
+    gap:20px;
+    justify-content: center;
 }

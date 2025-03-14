@@ -16,7 +16,12 @@ subtractBtn.onclick = function(){
 
 
 resetBtn.onclick = function(){
+    count = 0;
+    bigNumber.innerHTML = count;
 }
 
 addBtn.onclick = function(){
+    count++ ; 
+    console.log(count)
+    bigNumber.innerHTML = count;
 }
